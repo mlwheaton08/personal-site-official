@@ -1,0 +1,40 @@
+.text-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#view1 {
+    background-image: linear-gradient(to bottom, var(--bg-color-1), var(--bg-color-2));
+}
+
+#view2 {
+    background-image: linear-gradient(to bottom, var(--bg-color-2), var(--bg-color-3));
+}
+
+#view3 {
+    background-image: linear-gradient(to bottom, var(--bg-color-3), var(--bg-color-4));
+}
+
+.char {
+    transition: color 0.7s;
+}
+
+.char.bright {
+    font-weight: 300;
+    color: var(--primary-text-color);
+}
+
+.score {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    transition: font-weight 1s, color 1s;
+}
+
+.score.complete {
+    font-weight: 300;
+    color: var(--primary-text-color);
+}
