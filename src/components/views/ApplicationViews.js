@@ -7,7 +7,7 @@ export const ApplicationViews = () => {
 
 	return (
 		<Routes>
-			<Route path="1" element={ <View1 /> } />
+			<Route path="/" element={ <View1 /> } />
 			<Route path="2" element={ <View2 /> } />
 			<Route path="3" element={ <View3 /> } />
 		</Routes>
