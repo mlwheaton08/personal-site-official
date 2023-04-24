@@ -12,13 +12,22 @@ body {
 
     --primary-text-color: white;
     --secondary-text-color: rgba(255, 255, 255, 0.8);
+    --tertiary-text-color: rgb(255, 166, 0);
+    --quaternary-text-color: rgb(136, 255, 0);
 
-    --text-shadow-color-1: rgba(255, 255, 255, 0.199);
+    --text-shadow-color-1: rgba(255, 255, 255, 0.39);
 
     margin: 0;
     font-family: 'Raleway', sans-serif;
     color: var(--secondary-text-color);
     text-align: center;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 body:hover {
@@ -30,25 +39,4 @@ p {
     margin: 0;
     font-size: 2.5rem;
     font-weight: 200;
-}
-
-.page {
-    width: 70px;
-    fill: var(--secondary-text-color);
-    position: fixed;
-    transition: width 0.7s, fill 0.7s;
-}
-
-.page:hover {
-    width: 73px;
-    fill: var(--primary-text-color);
-}
-
-.page.next {
-    bottom: 25px;
-}
-
-.page.previous {
-    top: 25px;
-    transform: rotate(180deg);
 }
