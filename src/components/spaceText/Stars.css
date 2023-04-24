@@ -1,0 +1,80 @@
+.star {
+    --star-shadow-inactive: rgba(255, 255, 255, 0.507);
+
+    position: fixed;
+    border-radius: 50%;
+    box-shadow:
+        1px 1px 8px var(--star-shadow-inactive),
+        -1px -1px 8px var(--star-shadow-inactive),
+        1px -1px 8px var(--star-shadow-inactive),
+        -1px 1px 8px var(--star-shadow-inactive);
+    background-color: rgba(255, 255, 255, 0.7);
+    transition:
+        width 2s,
+        height 2s,
+        box-shadow 0.8s ease-in-out,
+        background-color 0.5s,
+        top 0.5s,
+        left 0.5s;
+    transition-timing-function: ease-in;
+}
+
+@keyframes starTwinkle {
+    100%  {background-color: rgba(0, 0, 0, 0); box-shadow: none;}
+  }
+
+.star.twinkle-1 {
+    animation-name: starTwinkle;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.star.twinkle-2 {
+    animation-name: starTwinkle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.star.twinkle-3 {
+    animation-name: starTwinkle;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.star.twinkle-4 {
+    animation-name: starTwinkle;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.star.twinkle-5 {
+    animation-name: starTwinkle;
+    animation-duration: 1.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.star.twinkle-6 {
+    animation-name: starTwinkle;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.star.twinkle-7 {
+    animation-name: starTwinkle;
+    animation-duration: 2.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.star.twinkle-8 {
+    animation-name: starTwinkle;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
